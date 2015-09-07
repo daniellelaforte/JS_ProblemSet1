@@ -12,4 +12,21 @@ function letterCapitalize(str) {
 	return strarr;
 }
 
+
+function wordCount(str) {
+
+    var arr = str.split(" ");
+    return arr.length;
+}
+
+function primeTime(num) {
+
+    if (num%2!=0 && num%3!=0 && num%5!=0)
+    	return true;
+    else
+    	return false;
+}
+
 console.log(letterCapitalize("hello there how are you?"));
+console.log(wordCount("How many words is in this sentence?"));
+console.log(primeTime(59));
